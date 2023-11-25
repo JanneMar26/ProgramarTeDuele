@@ -1,10 +1,31 @@
-.navbar-brand{
+.navbar-brand, .title-nosotros{
     font-family: 'Coiny', sans-serif;
 }
 
+.nav-link {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 .logo-v1-nav{
-    width: 8%;
+    width: 7%;
     height: auto;
-    margin: ;
+    position: relative;
+    bottom: 6px;
+    left: 3px;
+}
+
+#navbarText{
+    position: absolute;
+    right: 20px;
     
 }
+
+.title-nosotros{
+    display: inline; 
+    margin-left: 8%;
+    margin-top: 10%;
+    font-size: 70px;
+    /* border: 1px solid;  */
+}
+
+
