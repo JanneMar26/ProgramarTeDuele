@@ -1,9 +1,13 @@
+main{
+    margin: 5%;
+}
+
 .navbar-brand, .title-nosotros{
     font-family: 'Coiny', sans-serif;
 }
 
 .nav-link {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .logo-v1-nav{
@@ -20,12 +24,82 @@
     
 }
 
+.title{
+    display: inline;
+}
 .title-nosotros{
     display: inline; 
-    margin-left: 8%;
-    margin-top: 10%;
-    font-size: 70px;
+    margin-top: 3%;
+    font-size: 120px;
     /* border: 1px solid;  */
 }
 
+.quienes-somos, #somos{
+    display: flex; 
+    margin-top: 3%;
+}
+.quienes-somos, .mision, .vision{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Coiny', sans-serif;
+    color: #F28482;
+    font-size: 50px;
+}
+
+.mision, .vision{
+    margin-top: 5%;
+}
+
+.somos-descripcion{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 530px; 
+    font-size: 25px;
+    display: flex;
+    margin-top: 5%;
+}
+
+#valores{
+    font-family: 'Coiny', sans-serif;
+    color: #F28482;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+.valor{
+    font-family: 'Nunito', sans-serif;
+    color: #486284 ;
+}
+
+.valores-img{
+    width: 60%;
+    height: auto;
+    position: relative;
+    bottom: 6px;
+    left: 3px;
+    margin-top: 20%;
+}
+
+#perro-caja{
+    display: fixed;
+    position: relative;
+    max-width: 40%; /* La imagen se ajustará al ancho del contenedor */
+    height: auto;
+    right: 0px;
+    bottom: 35px;
+}
+
+
+#nuestro-equipo-title{
+    font-family: 'Nunito', sans-serif;
+    color: #F28482;
+    margin-top: 8%;
+}
+
+#carouselExample{
+    margin-top: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    color: #f10400;
+}
 
