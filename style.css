@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-clr: #F8EDED;
+  --secondary-bg-clr: #F2D0D2;
+  --main-text-clr: #393838;
+  --secondary-text-clr: #656464;
+  --main-section-bg-clr: #F3F3F3;
+}
