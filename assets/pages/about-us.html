@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../styles/about-us.css">
+    <link rel="stylesheet" href="../styles/cards-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+</head>
+
+<body>
+    <!-- Contenedor del indicador de carga -->
+    <!-- <div class="loading-container">
+    <div class="loader"></div>
+  </div> -->
+
+
+    <div id="main-content">
+        <!-- Page Content -->
+
+        <!-- Navbar -->
+        <header id="nav-bar">
+            <nav class="navbar-custom navbar navbar-custom navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <!-- Left Side Navbar -->
+                    <a class="navbar-brand" href="#"><img src="../img/logos/SVG/Logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- Right Side Navbar -->
+                    <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Adoptar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acerca De</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Involúcrate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-btn" href="#">Iniciar Sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="btn-register" class="nav-link rounded-5" href="#">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Banner Section -->
+        <main>
+            <h2 id="text" data-speedx="0.03" data-speedy="0.04" data-speedz="0" data-rotation="0" class="parallax">
+                Adopción
+                Responsable</h2>
+            <!-- Custom attribute data-speedx and data-speedy to add our own information to these elemenets, in this case we will add a speed value for each layer element, we will add to this information through JS -->
+            <!-- Layers in back need to move slower -->
+            <img src="../img/header/AboutUs1.png" alt="" id="subject1" data-speedx="0.04" data-speedy="0.03"
+                data-speedz="0" data-rotation="0" class="parallax">
+            <img src="../img/header/AboutUs2.png" alt="" id="subject2" data-speedx="0.03" data-speedy="0.04"
+                data-speedz="0" data-rotation="0" class="parallax">
+            <img src="../img/header/AboutUs3.png" alt="" id="subject3" data-speedx="0.05" data-speedy="0.06"
+                data-speedz="0" data-rotation="0" class="parallax">
+            <img src="../img/vectors/SVG/Vector1.svg" alt="" id="bg-vector1" data-speedx="0.08" data-speedy="0.07"
+                data-speedz="0" data-rotation="0" class="parallax">
+            <img src="../img/vectors/SVG/Vector2.svg" alt="" id="bg-vector2" data-speedx="0.09" data-speedy="0.06"
+                data-speedz="0" data-rotation="0" class="parallax">
+        </main>
+
+        <!-- About Us Section  -->
+        <section id="about-us">
+            <div class="container">
+                <div class="row custom-padding">
+                    <div class="col-md-6">
+                        <p class="title-font">Quienes somos?</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="secondary-text">Somos una red social mexicana enfocada en la gestión de procesos de
+                            adopción
+                            responsables y accesibles para cualquier persona que quiera darle un hogar a un perrito o
+                            gatito en
+                            situacion de calle.</p>
+                    </div>
+                </div>
+                <div class="row custom-padding">
+                    <div class="col-md-6">
+                        <p class="title-font">Misión y Visión</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="secondary-text bottom-padding">Buscamos crear un espacio virtual donde las personas
+                            puedan
+                            encontrar información,
+                            detallada y precisa, sobre animales en rescate disponibles para adopción. Reduciendo la
+                            población de
+                            mascotas abandonadas o en situación de calle
+                        </p>
+                        <p class="secondary-text">Deseamos ser una plataforma líder en adopciones de mascotas,
+                            ofreciendo no solo un
+                            proceso fácil de
+                            adopción y transparente, sino también en educación continua sobre la responsabilidad de
+                            tener una mascota.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Team Section  -->
+        <section class="meet-our-team">
+            <div class="container">
+                <h2 class="title title-font text-center">Conoce a nuestro equipo</h2>
+            </div>
+
+            <div class="card-container">
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/IzcoGuerrero.JPG" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Front-End y Back-End</span>
+                                <div class="blog-slider__title">Izcoatl Guerrero Leon</div>
+                                <div class="blog-slider__text">Desarrollador Front-End altamente motivado y orientado a
+                                    los detalles
+                                    para la
+                                    creación de aplicaciones web dinámicas y receptivas. Dedicado y orientado a la
+                                    eficiencia y el
+                                    aprendizaje de nuevas
+                                    habilidades</div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/JanettVargas.png" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Back-End</span>
+                                <div class="blog-slider__title">Janett Venegas</div>
+                                <div class="blog-slider__text">Desarrolladora enfocada en las tecnologías emergentes
+                                    para abordar
+                                    desafíos y aportar mejoras en proyectos del área. Entusiasmada de ser parte del
+                                    equipo de AdoptaPatas!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/GeoFlores.png" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Back-End</span>
+                                <div class="blog-slider__title">Geo Flores</div>
+                                <div class="blog-slider__text">Programadora con conocimientos en aspectos básicos de
+                                    diseño de UX,
+                                    JavaScript, GIT y GitHub. Apasionada del aprendizaje continuo, la orientación al
+                                    detalle y
+                                    persistencia.</div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/DanielIguiñez.jpeg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Front-End</span>
+                                <div class="blog-slider__title">Daniel Iñiguez</div>
+                                <div class="blog-slider__text">Ingeniero en Mecatrónica con pasión en la programación,
+                                    me gusta
+                                    desarrollar páginas web tanto en el área del front-end como en el back-end. Me gusta
+                                    aprender
+                                    constantemente cosas nuevas para poder crecer constantemente personal y
+                                    profesionalmente.</div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/EduardoRamos.jpeg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">SCRUM Master</span>
+                                <div class="blog-slider__title">José Eduardo Lopez</div>
+                                <div class="blog-slider__text">Entusiasta ingeniero en Tecnologías de la Información con
+                                    habilidades
+                                    sólidas en la creación de soluciones digitales cautivadoras. Mi enfoque combina
+                                    diseño atractivo con
+                                    funcionalidad avanzada para ofrecer experiencias excepcionales</div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/MonserratSilva.jpeg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Front-End</span>
+                                <div class="blog-slider__title">Monserrat Silva</div>
+                                <div class="blog-slider__text">Lic. en Psicología con experiencia como Especialista de
+                                    Recursos Humanos,
+                                    con conocimientos en programación y análisis de datos. Siempre con enfoque al
+                                    diseño, implementación y
+                                    seguimiento para la mejora continua en cada proyecto.</div>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="../img/about-us/RogelioLopez.jpg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Back-End</span>
+                                <div class="blog-slider__title">Rogelio Lopez</div>
+                                <div class="blog-slider__text">Apasionado por la industria de la tecnología y como sus
+                                    avances han
+                                    permitido mejorar la calidad de vida de millones de personas. Mi enfoque actual
+                                    se ubica principalmente en trabajar y proporcionar mejores perspectivas en el área,
+                                    aplicando mis
+                                    conocimientos de las ciencias físico-matemáticas en el desarrollo web.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="blog-slider__pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+
+        <footer class="bg-dark text-white">
+            <div class="container">
+                <div class="row custom-padding-row">
+                    <div class="col-md-6 col-lg-6 text-md-left d-flex flex-column left-container">
+                        <img id="footer-logo" src="../img/logos/SVG/Logo-Footer.svg" alt="">
+                        <a class="a-link" href="">contacto.adoptapatas@gmail.com</a>
+                        <p class="custom-align mb-4">@ Copyright 2023 AdoptaPatas. Todos los derechos reservadoS</p>
+                    </div>
+                    <div class="col-md-6 col-lg-6 text-md-end d-flex flex-column right-container">
+                        <a class="a-link" href="">Preguntas Frecuentes</a>
+                        <a class="a-link" href="">Centro de Información</a>
+                        <a class="a-link" href="">Apoya este proyecto</a>
+                        <a class="a-link" href="">Encuentra una mascota</a>
+                        <ul class="list-unstyled list-inline float-end">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
+    <script src="../js/about-us.js"></script>
+</body>
+
+</html>

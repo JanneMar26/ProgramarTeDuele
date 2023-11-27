@@ -1,55 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Indicador de carga</title>
-  <style>
-    /* Estilos para el indicador de carga */
-    .loader {
-      border: 4px solid rgba(0, 0, 0, 0.1);
-      border-left: 4px solid #333;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    
-
-    /* Estilos para el contenedor */
-    .loading-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Contenedor del indicador de carga -->
-  <div class="loading-container">
-    <div class="loader"></div>
-  </div>
 
-  <!-- Tu contenido principal -->
-  <div id="main-content" style="display: none;">
-    <!-- Aquí va el contenido de tu página -->
-    holaaaaa
-    <!-- Puedes poner tu HTML, imágenes, texto, etc. -->
-  </div>
-
-  <script>
-    // Simulando un retraso de carga para mostrar el indicador
-    setTimeout(() => {
-      // Ocultar el indicador de carga y mostrar el contenido principal
-      document.querySelector('.loading-container').style.display = 'none';
-      document.getElementById('main-content').style.display = 'block';
-    }, 3000); // Este es un ejemplo de retraso de carga (3000 milisegundos = 3 segundos), puedes ajustarlo según tu necesidad.
-
-  </script>
+  <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

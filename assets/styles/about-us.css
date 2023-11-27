@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+/* Adding Fonts  */
+
+@font-face {
+    font-family: 'Nunito Bold';
+    src: url("../fonts/Nunito/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito Black';
+    src: url("../fonts/Nunito/Nunito-Black.ttf");
+}
+
+@font-face {
+    font-family: "Nunito ExtraBold";
+    src: url("../fonts/Nunito/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Coiny";
+    src: url("../fonts/Coiny/Coiny-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../fonts/OpenSans/OpenSauceSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Medium";
+    src: url("../fonts/OpenSans/OpenSauceSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../fonts/OpenSans/OpenSauceSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Semi";
+    src: url("../fonts/OpenSans/OpenSauceSans-SemiBold.ttf");
+}
+
+/* Esto permite que la propiedad sea aplicada a todos los elementos y sub elementos (::after) del documento HTML, border-box permite agregar el padding y el margen dentro de la medida establecida de cada elemento, es decir, la medida queda igual.  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-clr: #F8EDED;
+    --secondary-bg-clr: #F2D0D2;
+    --main-text-clr: #393838;
+    --secondary-text-clr: #656464;
+    --main-section-bg-clr: #F3F3F3;
+}
+
+::selection {
+    background-color: var(--secondary-bg-clr);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el indicador de carga */
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Estilos para el contenedor */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* -------------- Navbar ---------------- */
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+/* .navbar-custom {
+  background-color: var(--main-bg-clr) !important;
+
+} */
+
+.navbar-brand img {
+    width: 14rem;
+    padding-left: 12%;
+}
+
+.navbar-nav li {
+    padding: 0 15px;
+}
+
+.navbar-nav li a,
+.text-btn {
+    color: var(--main-text-clr) !important;
+    font-family: "Open Sans Semi";
+    font-size: 14px;
+}
+
+.navbar-nav li a {
+    text-align: center;
+}
+
+.fa-bars {
+    color: var(--main-text-clr);
+    font-size: 30px;
+
+}
+
+.navbar-toggler:focus {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.text-btn,
+.text-btn-white {
+    text-decoration: none;
+}
+
+#btn-register {
+    background-color: var(--main-text-clr);
+    color: white !important;
+    font-size: 14px;
+    font-family: "Open Sans Semi";
+    padding: 9px 20px;
+}
+
+/* -------------- Main Banner Section ---------------- */
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--main-bg-clr);
+    pointer-events: none;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+
+}
+
+#text {
+    position: absolute;
+    font-size: 5rem;
+    color: var(--main-text-clr);
+    z-index: 10;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Nunito ExtraBold";
+    pointer-events: auto;
+}
+
+#subject1 {
+    position: absolute;
+    width: 539px;
+    top: calc(65% + 123px);
+    left: calc(50% + 1px);
+    z-index: 8;
+    pointer-events: none;
+}
+
+#subject2 {
+    position: absolute;
+    width: 430px;
+    top: calc(75% + 120px);
+    left: calc(22% + 10px);
+    z-index: 7;
+    pointer-events: none;
+}
+
+#subject3 {
+    position: absolute;
+    width: 390px;
+    top: calc(64% + 120px);
+    left: calc(50% + 420px);
+    z-index: 6;
+    pointer-events: none;
+}
+
+#bg-vector1 {
+    position: absolute;
+    width: 800px;
+    top: calc(60% + 2px);
+    left: calc(50% + 650px);
+    pointer-events: none;
+}
+
+#bg-vector2 {
+    position: absolute;
+    width: 620px;
+    top: calc(60% + 2px);
+    left: calc(50% - 600px);
+    pointer-events: none;
+}
+
+/* -------------- About Us Section ---------------- */
+
+#about-us {
+    background-color: var(--main-section-bg-clr);
+    padding: 50px 10px;
+}
+
+.title-font {
+    font-family: "Nunito ExtraBold";
+    font-size: 3.3rem;
+    color: var(--main-text-clr);
+}
+
+.secondary-text {
+    font-family: "Open Sans Regular";
+    font-size: 1.20rem;
+    color: var(--secondary-text-clr);
+}
+
+.bottom-padding {
+    padding-bottom: 2rem;
+}
+
+.custom-padding {
+    padding: 5rem 4rem;
+}
+
+
+/* -------------- Meet our team Section ---------------- */
+
+.meet-our-team {
+    background-color: var(--main-section-bg-clr);
+    height: 800px;
+}
+
+.container {
+    padding: 1rem 3rem;
+}
+
+.card-container {
+    height: 20rem;
+    margin: 6rem 1rem 11rem;
+}
+
+.blog-slider__title {
+    font-family: "Open Sans Bold";
+    font-size: 5rem;
+}
+
+.blog-slider__text,
+.blog-slider__code {
+    font-family: "Open Sans Regular";
+    font-size: 1rem;
+}
+
+/* ---------------- Footer --------------------- */
+
+.custom-padding-row {
+    padding: 3% 4%;
+}
+
+#footer-logo {
+    width: 14rem;
+}
+
+.a-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.left-container,
+.right-container {
+    min-height: 230px;
+    justify-content: space-between;
+}
+
+
+/* --------------- Media Quuery Breakpoints */
+
+@media (max-width: 1100px) {
+    #text {
+        font-size: 5rem;
+    }
+
+    #subject1 {
+        width: 480px;
+        top: calc(75% + 123px);
+        left: calc(50% + 1px);
+    }
+
+    #subject2 {
+        width: 380px;
+        top: calc(75% + 120px);
+        left: calc(18% + 10px);
+    }
+
+    #subject3 {
+        width: 310px;
+        top: calc(78% + 120px);
+        left: calc(73% + 100px);
+    }
+
+    #bg-vector1 {
+        width: 650px;
+        top: calc(60% + 2px);
+        left: calc(50% + 450px);
+    }
+
+    #bg-vector2 {
+        width: 620px;
+        top: calc(60% + 2px);
+        left: calc(50% - 400px);
+    }
+}
+
+
+@media (max-width: 725px) {
+    #text {
+        font-size: 4.2rem;
+    }
+
+    .navbar-brand img {
+        width: 10rem;
+    }
+
+    #subject1 {
+        width: 350px;
+        top: calc(68% + 123px);
+        left: calc(50% + 1px);
+    }
+
+    #subject2 {
+        width: 300px;
+        top: calc(75% + 120px);
+        left: calc(15% + 10px);
+    }
+
+    #subject3 {
+        width: 230px;
+        top: calc(75% + 120px);
+        left: calc(50% + 230px);
+    }
+
+    #bg-vector1 {
+        width: 400px;
+        left: calc(50% + 300px);
+    }
+
+    #bg-vector2 {
+        width: 350px;
+        left: calc(50% - 300px);
+    }
+
+    .custom-padding {
+        padding: 5rem 3rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meet-our-team {
+        padding: 5%;
+        height: 1000px;
+    }
+
+    .left-container,
+    .right-container {
+        align-items: center;
+        min-height: 250px;
+    }
+
+    .title-font {
+        font-size: 2.5rem;
+    }
+
+    .secondary-text {
+        font-size: 1rem;
+    }
+
+    .custom-align {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 520px) {
+    #text {
+        font-size: 3rem;
+    }
+
+    #subject3 {
+        left: calc(50% + 180px);
+    }
+
+    #bg-vector1 {
+        width: 350px;
+        left: calc(50% + 240px);
+    }
+
+    #bg-vector2 {
+        width: 320px;
+        left: calc(50% - 200px);
+    }
+
+    .meet-our-team {
+        padding: 5%;
+        height: 1000px;
+    }
+
+
+}
