@@ -140,12 +140,12 @@ main{
 .col2{
     float: right;
 }
-.logo-blanco,.fb-logo{
+.logo-blanco,.fb-logo,.ig-logo,.x-logo{
     width: 8%;
     height: auto;
 }
-.fb-logo{
-    width: 8%;
+.fb-logo,.ig-logo,.x-logo{
+    margin-left: 3%;
     float: right;
 }
 
