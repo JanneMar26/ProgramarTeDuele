@@ -1,4 +1,4 @@
-//Created a constant to store all the "parallax" class layers 
+/* //Created a constant to store all the "parallax" class layers 
 const parallaxEl = document.querySelectorAll(".parallax");
 
 //Created two values that represent the x axis and the y axis so we can dictate the distance each element will be moved depending on the mouse coordinates inside the page
@@ -21,7 +21,7 @@ function update(cursorPosition) {
     let isInLeft = parseFloat(getComputedStyle(element).left) < window.innerWidth / 2 ? 1 : -1;
     let zValue = (cursorPosition - parseFloat(getComputedStyle(element).left)) * isInLeft * 0.1;
 
-    element.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${yValue * speedy}px)) perspective(2300px) translateZ(${zValue * speedz}px) rotateY(${rotateDegree * rotateSpeed}deg)`; //We add -xValue so elements move opposite direction of mouse
+    element.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${-yValue * speedy}px)) perspective(2300px) translateZ(${-zValue * speedz}px) rotateY(${rotateDegree * rotateSpeed}deg)`; //We add -xValue so elements move opposite direction of mouse
   })
 }
 
@@ -35,8 +35,9 @@ window.addEventListener("mousemove", (e) => {
   yValue = e.clientY - (window.innerHeight / 2);
   rotateDegree = (xValue / (window.innerWidth / 2)) * 20;
   update(e.clientX);
+  
 
-});
+}); */
 
 // ========= Swiper js ==============
 

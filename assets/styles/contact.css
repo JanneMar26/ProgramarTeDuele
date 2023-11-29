@@ -40,11 +40,24 @@
     src: url("../fonts/OpenSans/OpenSauceSans-SemiBold.ttf");
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --main-bg-clr: #F8EDED;
+    --secondary-bg-clr: #F2D0D2;
+    --main-text-clr: #393838;
+    --secondary-text-clr: #656464;
+    --main-section-bg-clr: #F3F3F3;
+}
+
+
 
 /* -------------- Navbar ---------------- */
-
 header {
-    position: absolute;
+    position: relative;
     z-index: 999;
     width: 100%;
 }
@@ -79,7 +92,7 @@ header {
 }
 
 .fa-bars {
-    color: var(--main-text-clr);
+    color: var(--main-text-clr) ;
     font-size: 30px;
 
 }
@@ -100,9 +113,31 @@ header {
 
 #btn-register {
     background-color: var(--main-text-clr);
-    color: rgb(0, 0, 0) !important;
+    color: white !important;
     font-size: 14px;
     font-family: "Open Sans Semi";
     padding: 9px 20px;
+}
+
+
+
+/* ---------------- Footer --------------------- */
+.custom-padding-row {
+    padding: 3% 4%;
+}
+
+#footer-logo {
+    width: 14rem;
+}
+
+.a-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.left-container,
+.right-container {
+    min-height: 230px;
+    justify-content: space-between;
 }
 
