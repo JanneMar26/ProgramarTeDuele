@@ -1,4 +1,4 @@
-/* //Created a constant to store all the "parallax" class layers 
+//Created a constant to store all the "parallax" class layers 
 const parallaxEl = document.querySelectorAll(".parallax");
 
 //Created two values that represent the x axis and the y axis so we can dictate the distance each element will be moved depending on the mouse coordinates inside the page
@@ -37,7 +37,7 @@ window.addEventListener("mousemove", (e) => {
   update(e.clientX);
   
 
-}); */
+});
 
 // ========= Swiper js ==============
 
