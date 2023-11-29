@@ -20,7 +20,8 @@
             <div class="container-fluid">
                 <!-- Logo -->
                 <!-- Left Side Navbar -->
-                <a class="navbar-brand" href="#"><img src="../img/logos/SVG/Logo.svg" alt="" /></a>
+                <a class="navbar-brand" href="#"><img id="logoNav" src="../img/logos/logo_v1.png"/>
+                AdoptaPatas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -37,10 +38,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Involúcrate</a>
                         </li>
-                        <li class="nav-item">
+                        <li id="loginButton" class="nav-item rounded-5">
                             <a class="nav-link text-btn" href="#">Iniciar Sesión</a>
                         </li>
-                        <li class="nav-item">
+                        <li id="registerButton" class="nav-item">
                             <a id="btn-register" class="nav-link rounded-5" href="#">Registrarse</a>
                         </li>
                     </ul>
@@ -53,26 +54,28 @@
     <main>
         <section class="container-fluid">
             <section class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <img src="../img/About-Us/DanielIñiguez.jpeg" alt="" class="img-fluid img1">
+                <div class="col-lg-6 col-sm-0 text-center mb-3 mt-3 pt-5 pb-5">
+                    <img id="imgContact" src="../img/About-Us/DanielIñiguez.jpeg" alt="" class="img-fluid img1 rounded-5">
                 </div>
-                <div class="col-lg-4 col-sm-6 text-center">
-                    <h1 class="contact-title">Contacto</h1>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Nombre</label>
+                <div class="col-lg-6 col-sm-12 text-center pe-5 pt-5">
+                    <h1 class="contact-title mb-5 mt-3">Contacto</h1>
+                
+                    <div class="mb-3 form-floating">
+                        <label for="nameUser" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nameUser" placeholder="Juan">
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                    <div class="mb-3 form-floating">
+                        <label for="emailUser" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="emailUser" placeholder="name@example.com">
                     </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Mensaje</label>
+                    <div class="mb-3 form-floating">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
-                    <div class="form-floating">
-                        
-                    </div>
+                
+                    <button id="buttonContact" type="button" class="btn">Contáctanos</button>
+
+                </div>
                 </div>
             </section>
         </section>

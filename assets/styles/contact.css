@@ -158,3 +158,30 @@ header {
     justify-content: space-between;
 }
 
+#logoNav {
+    width: 50px;
+}
+
+#loginButton {
+    border:2px solid black;
+    border-color: var(--secondary-bg-clr);
+}
+
+#btn-register {
+    background-color: var(--secondary-bg-clr);
+}
+
+main {
+    background-color: var(--secondary-bg-clr) !important;
+}
+
+#imgContact {
+    width: 200px;
+    height: auto;
+}
+
+#buttonContact {
+    background-color: brown;
+    color: azure;
+    width: 50%;
+}
