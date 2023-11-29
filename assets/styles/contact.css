@@ -135,8 +135,15 @@ header {
     object-fit: cover;
 }
 
+.img1{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
 
-
+.btn{
+    margin-top: 5%;
+}
 
 /* ---------------- Footer --------------------- */
 .custom-padding-row {
