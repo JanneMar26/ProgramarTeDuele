@@ -50,16 +50,17 @@
         </nav>
     </header>
 
-    <main class="">
-        <section class="container-fluid row">
+    <main class="container-fluid">
+        <section class="row">
             <!-- Imagen Perritos -->
-            <div class="col text-center mx-auto d-none d-md-block">
+            <div class="col text-center mx-auto d-none d-md-block d-flex justify-content-center">
                 <img id="imgContact" src="../img/contact/imgContact.png" alt="Un perro y un gato cuyo lema es adoptame, amor, amistad">
             </div>
             <!-- Formulario -->
-            <div class="col form">
-                <h2 class="d-flex justify-content-center">Contacto</h2>
+            <div class="col form col-style d-flex justify-content-center align-items-center ">
+                
                 <div class="centerForm">
+                    <h2 class="mx-auto text-center">Contacto</h2>
                     <div class="mb-3 form-div">
                         <p>Nombre</p>
                         <input type="text" class="form-control" id="nameUser">
@@ -75,10 +76,11 @@
                         <textarea class="form-control" id="message" rows="3"></textarea>
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
+                    <div class="mx-auto mt-5 text-center">
+                        <button id="buttonContact" type="button" class="btn rounded-5">Contáctanos</button>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center mt-5">
-                    <button id="buttonContact" type="button" class="btn rounded-5">Contáctanos</button>
-                </div>
+                
             </div>
         </section>
     </main>

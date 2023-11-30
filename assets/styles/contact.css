@@ -134,7 +134,7 @@ header {
 background-color: #f3f1f1;
 }
 
-/* Main */
+/*------------- Main --------------------*/
 main {
     background-color: var(--main-bg-clr) !important;
     padding-top: 100px;
@@ -165,7 +165,7 @@ p {
 }
 
 #imgContact {
-    width: 50%;
+    width: 70%;
 }
 
 #nameUser, #emailUser, #message {
@@ -175,7 +175,14 @@ p {
 
 .form-div {
     border-bottom: 2px solid black;
+    width: 100%;
 }
+
+/* .col-style{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} */
 
 
 
