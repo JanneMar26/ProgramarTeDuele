@@ -59,23 +59,32 @@
             <!-- Formulario -->
             <div class="col form">
                 <h2 class="d-flex justify-content-center">Contacto</h2>
-                <div class="centerForm">
-                    <div class="mb-3 form-div">
-                        <p>Nombre</p>
+                <form id="formUser">
+                    <div class="mb-1 form-div nameUserClass">
+                        <p class="nameUserClass">Nombre</p>
                         <input type="text" class="form-control" id="nameUser">
                         <!-- <label for="nameUser" class="form-label">Nombre</label> -->
                     </div>
-                    <div class="mb-3 form-floating form-div">
-                        <p>Email</p>
+                    <p class="nameUserClass" style="color:red"></p>
+                    <div class="mb-1 form-floating form-div emailUserClass">
+                        <p class="emailUserClass">Email</p>
                         <input type="email" class="form-control" id="emailUser">
                         <!-- <label for="emailUser" class="form-label">E-mail</label> -->
                     </div>
-                    <div class="mb-3 form-floating form-div">
-                        <p>Mensaje</p>
+                    <p class="emailUserClass" style="color:red"></p>
+                    <div class="mb-1 form-floating form-div telUserClass">
+                        <p class="telUserClass">Teléfono</p>
+                        <input type="tel" class="form-control" id="telUser" maxlength="10">
+                        <!-- <label for="emailUser" class="form-label">E-mail</label> -->
+                    </div>
+                    <p class="telUserClass" style="color:red"></p>
+                    <div class="mb-1 form-floating form-div messageClass">
+                        <p class="messageClass">Mensaje</p>
                         <textarea class="form-control" id="message" rows="3"></textarea>
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
-                </div>
+                    <p class="messageClass" style="color:red"></p>
+                </form>
                 <div class="d-flex justify-content-center mt-5">
                     <button id="buttonContact" type="button" class="btn rounded-5">Contáctanos</button>
                 </div>
@@ -124,7 +133,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
     <!-- Script Nosotros -->
-    <script src="../js/contacto.js"></script>
+    <script type="module" src="../js/contacto.js"></script>
     
 </body>
 </html>

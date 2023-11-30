@@ -165,10 +165,10 @@ p {
 }
 
 #imgContact {
-    width: 50%;
+    width: 60%;
 }
 
-#nameUser, #emailUser, #message {
+#nameUser, #emailUser, #message, #telUser {
     background-color: var(--main-bg-clr);
     border: none;
 }
