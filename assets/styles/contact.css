@@ -175,7 +175,7 @@ p {
 
 .form-div {
     border-bottom: 2px solid black;
-    min-width: 500px;
+    min-width: 100%;
 }
 
 /* .col-style{
