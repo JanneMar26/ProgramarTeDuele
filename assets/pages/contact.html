@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +13,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
 
     <!-- Navbar -->
-    <header id="nav-bar" class="mt-2">
+    <header id="nav-bar">
         <nav class="navbar-custom navbar navbar-custom navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Logo -->
                 <!-- Left Side Navbar -->
-                <a class="navbar-brand" href="#"><img id="logoNav" src="../img/logos/logo_v1.png" />
-                    AdoptaPatas</a>
+                <a class="navbar-brand" href="#"><img id="logoNav" src="../img/logos/SVG/Logo.svg" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -52,34 +53,55 @@
 
     <main class="container-fluid">
         <section class="row">
-            <!-- Imagen Perritos -->
-            <div class="col text-center mx-auto d-none d-md-block d-flex justify-content-center">
-                <img id="imgContact" src="../img/contact/imgContact.png" alt="Un perro y un gato cuyo lema es adoptame, amor, amistad">
+            <!-- Carrusel Perritos-->
+            <div class="col text-center mx-auto d-none d-md-block  m-auto">
+                <div id="carouselExampleSlidesOnly" class="carousel slide m-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/contact/Carousel/imgContact.jpeg" class="imgC d-block w-80" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/contact/Carousel/imgContact(2).jpeg" class="imgC d-block w-80" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/contact/Carousel/imgContact(3).jpeg" class="imgC d-block w-80" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/contact/Carousel/imgContact(4).jpeg" class="imgC d-block w-80" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                <!-- <img id="imgContact" src="../img/contact/imgContact.png"
+                    alt="Un perro y un gato cuyo lema es adoptame, amor, amistad" class="text-center"> -->
             </div>
+
             <!-- Formulario -->
-            <div class="col form col-style d-flex justify-content-center align-items-center ">
-                <div class="centerForm min-vw-30 w-100">
+            <div class="col form col-style m-auto">
+                <div class="centerForm ">
                     <h2 class="mb-5 text-center text-contact">Contacto</h2>
-                    <div class="mb-3 form-div">
-                        <p>Nombre</p>
-                        <input type="text" class="form-control" id="nameUser">
+                    <div class="mb-3 form-div ">
+                        <p class="text-form">Nombre</p>
+                        <input type="text" class="form-control" id="nameUser" placeholder="Nombre ApellidoPaterno ApellidoMaterno">
                         <!-- <label for="nameUser" class="form-label">Nombre</label> -->
                     </div>
-                    <div class="mb-3 form-floating form-div">
-                        <p>Email</p>
-                        <input type="email" class="form-control" id="emailUser">
-                        <!-- <label for="emailUser" class="form-label">E-mail</label> -->
+                    <div class="mb-3  form-div">
+                        <p class="text-form">Email</p>
+                        <input type="email" class="form-control" id="emailUser" placeholder="name@example.com">
+                        <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
                     </div>
-                    <div class="mb-3 form-floating form-div">
-                        <p>Mensaje</p>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    <div class="mb-3 form-floating form-diiv">
+                        <p class="text-form">Mensaje</p>
+                        <div class="col-sm-12">
+                            <textarea class="form-control border border-1 border-dark form-message" id="message" rows="7" placeholder="Escribe aqui tu queja o sugerencia."></textarea>
+                        </div>
+                        
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
                     <div class="mx-auto mt-5 text-center">
-                        <button id="buttonContact" type="button" class="btn rounded-5">Contáctanos</button>
+                        <button id="buttonContact" type="submit" class="btn rounded-5">Contáctanos</button>
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
@@ -126,6 +148,7 @@
     <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
     <!-- Script Nosotros -->
     <script src="../js/contacto.js"></script>
-    
+
 </body>
+
 </html>

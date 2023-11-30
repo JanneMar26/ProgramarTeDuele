@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Adding Fonts  */
 
 @font-face {
@@ -40,6 +42,7 @@
     src: url("../fonts/OpenSans/OpenSauceSans-SemiBold.ttf");
 }
 
+/* Esto permite que la propiedad sea aplicada a todos los elementos y sub elementos (::after) del documento HTML, border-box permite agregar el padding y el margen dentro de la medida establecida de cada elemento, es decir, la medida queda igual.  */
 *,
 *::before,
 *::after {
@@ -49,7 +52,6 @@
 /* Paleta de Colores */
 :root {
     --buttonsColor: #F28482;
-    --bgNavBar: #FFFFFF;
     --main-bg-clr: #F8EDED;
     --secondary-bg-clr: #F2D0D2;
     --main-text-clr: #393838;
@@ -57,21 +59,40 @@
     --main-section-bg-clr: #F3F3F3;
 }
 
+::selection {
+    background-color: var(--secondary-bg-clr);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* -------------- Navbar ---------------- */
 header {
-    position: relative;
+    position: absolute;
     z-index: 999;
     width: 100%;
-    border-bottom: 1px solid #e4dddd;
-    font-family: "Coiny";
 }
 
-.nav-bar {
-    background-color: var(--bgNavBar) !important;
+.navbar {
+    background-color: transparent !important;
 }
+
+/* .navbar-custom {
+  background-color: var(--main-bg-clr) !important;
+
+} */
 
 .navbar-brand img {
-    width: 60px;
+    width: 14rem;
     padding-left: 12%;
 }
 
@@ -91,7 +112,7 @@ header {
 }
 
 .fa-bars {
-    color: var(--main-text-clr) ;
+    color: var(--main-text-clr);
     font-size: 30px;
 
 }
@@ -111,12 +132,12 @@ header {
 }
 
 #btn-register {
-    background-color: var(--buttonsColor);
+    background-color: var(--main-text-clr);
     color: white !important;
     font-size: 14px;
     font-family: "Open Sans Semi";
     padding: 9px 20px;
-} 
+}
 
 #btn-login {
     color: black;
@@ -175,18 +196,29 @@ p {
 
 .form-div {
     border-bottom: 2px solid black;
-    min-width: 100%;
 }
 
-/* .col-style{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-} */
+.form-div:hover {
+    border-bottom: 2px solid var(--buttonsColor);
+
+}
+
+.text-form{
+    font-size: 130%;
+}
 
 .btn{
     margin-top: 5%;
 }
+
+.imgC{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
 
 /* ---------------- Footer --------------------- */
 .custom-padding-row {
