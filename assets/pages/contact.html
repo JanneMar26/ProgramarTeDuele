@@ -92,9 +92,10 @@
                     <span id="errorEmail" class="d-flex justify-content-center text-danger emailUserClass"></span>
                     <div class="mb-3  form-div telUserClass">
                         <p class="text-form telUserClass">Telefono</p>
-                        <input type="tel" class="form-control telUserClass" id="telUser" placeholder="1234567891">
+                        <input type="tel" class="form-control " id="telUser" placeholder="1234567891" maxlength="10">
                         <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
                     </div>
+                    <span id="errorEmail" class="d-flex justify-content-center text-danger telUserClass"></span>
                     <div class="mb-3 form-floating form-diiv">
                         <p class="text-form">Mensaje</p>
                         <div class="col-sm-12">
@@ -103,7 +104,7 @@
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
                     <div class="mx-auto mt-5 text-center">
-                        <button id="buttonContact" type="submit" class="btn rounded-5" onclick="clickButton()">Contáctanos</button>
+                        <button id="buttonContact" type="button" class="btn rounded-5">Contáctanos</button>
                     </div>
                 </form>
             </div>
@@ -151,7 +152,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
     <!-- Script Nosotros -->
-    <script src="../js/contacto.js"></script>
+    <script type="module" src="../js/contact/contact.js"></script>
 
 </body>
 

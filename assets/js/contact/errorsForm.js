@@ -16,8 +16,8 @@ const showError = (className,msgError) => {
 
     const elements = document.getElementsByClassName(className);
 
-    elements[1].style.color = "red";
-    elements[0].style.borderBottom = "2px solid red";
+    // elements[1].style.color = "red";
+    // elements[0].style.borderBottom = "2px solid red";
     elements[2].innerHTML = msgError;
 
 };
