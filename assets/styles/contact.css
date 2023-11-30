@@ -184,7 +184,9 @@ p {
     align-items: center;
 } */
 
-
+.btn{
+    margin-top: 5%;
+}
 
 /* ---------------- Footer --------------------- */
 .custom-padding-row {
