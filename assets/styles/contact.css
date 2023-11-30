@@ -45,7 +45,11 @@
 *::after {
     box-sizing: border-box;
 }
+
+/* Paleta de Colores */
 :root {
+    --buttonsColor: #F28482;
+    --bgNavBar: #FFFFFF;
     --main-bg-clr: #F8EDED;
     --secondary-bg-clr: #F2D0D2;
     --main-text-clr: #393838;
@@ -53,26 +57,21 @@
     --main-section-bg-clr: #F3F3F3;
 }
 
-
-
 /* -------------- Navbar ---------------- */
 header {
     position: relative;
     z-index: 999;
     width: 100%;
+    border-bottom: 1px solid #e4dddd;
+    font-family: "Coiny";
 }
 
-.navbar {
-    background-color: transparent !important;
+.nav-bar {
+    background-color: var(--bgNavBar) !important;
 }
-
-/* .navbar-custom {
-  background-color: var(--main-bg-clr) !important;
-
-} */
 
 .navbar-brand img {
-    width: 14rem;
+    width: 60px;
     padding-left: 12%;
 }
 
@@ -112,29 +111,71 @@ header {
 }
 
 #btn-register {
-    background-color: var(--main-text-clr);
+    background-color: var(--buttonsColor);
     color: white !important;
     font-size: 14px;
     font-family: "Open Sans Semi";
     padding: 9px 20px;
+} 
+
+#btn-login {
+    color: black;
+    border: 2px solid var(--buttonsColor);
+    font-size: 14px;
+    font-family: "Open Sans Semi";
+    padding: 8px 18px;
 }
 
-/* ---------------- Main --------------------- */
-#carrusel{
-    max-width: 300px;
-    height: 400px;
-    border: 10px solid;
+#btn-register:hover {
+    background-color: #ea6d6b;
 }
 
-.img4,.img-cont{
-    flex-shrink: 0;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border: 5px solid blue;
-    object-fit: cover;
+#btn-login:hover {
+background-color: #f3f1f1;
 }
 
+/* Main */
+main {
+    background-color: var(--secondary-bg-clr) !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-family: "Nunito Bold" !important;
+    font-size: 300% !important;
+}
+
+p {
+    font-family: "Nunito Bold" !important;
+}
+
+#buttonContact {
+    background-color: var(--buttonsColor);
+    color: azure;
+    width: 50%;
+}
+
+#buttonContact:hover{
+    background-color: #ea6d6b;
+}
+
+.form {
+    width: 70%;
+}
+
+#imgContact {
+    width: 50%;
+}
+
+#nameUser, #emailUser, #message {
+    background-color: var(--secondary-bg-clr);
+    border: none;
+}
+
+.form-div {
+    border-bottom: 2px solid black;
+}
 
 
 
@@ -156,32 +197,4 @@ header {
 .right-container {
     min-height: 230px;
     justify-content: space-between;
-}
-
-#logoNav {
-    width: 50px;
-}
-
-#loginButton {
-    border:2px solid black;
-    border-color: var(--secondary-bg-clr);
-}
-
-#btn-register {
-    background-color: var(--secondary-bg-clr);
-}
-
-main {
-    background-color: var(--secondary-bg-clr) !important;
-}
-
-#imgContact {
-    width: 200px;
-    height: auto;
-}
-
-#buttonContact {
-    background-color: brown;
-    color: azure;
-    width: 50%;
 }

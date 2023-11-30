@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos | AdoptaPatas</title>
+    <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="../img/logos/logo_v1.png">
-    <title>Acerca De | AdoptaPatas</title>
     <!-- Link Css -->
     <link rel="stylesheet" href="../styles/contact.css">
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
 <body>
+
     <!-- Navbar -->
-    <header id="nav-bar">
+    <header id="nav-bar" class="mt-2">
         <nav class="navbar-custom navbar navbar-custom navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Logo -->
                 <!-- Left Side Navbar -->
-                <a class="navbar-brand" href="#"><img id="logoNav" src="../img/logos/logo_v1.png"/>
-                AdoptaPatas</a>
+                <a class="navbar-brand" href="#"><img id="logoNav" src="../img/logos/logo_v1.png" />
+                    AdoptaPatas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
@@ -38,10 +38,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Involúcrate</a>
                         </li>
-                        <li id="loginButton" class="nav-item rounded-5">
-                            <a class="nav-link text-btn" href="#">Iniciar Sesión</a>
+                        <li class="nav-item">
+                            <a id="btn-login" class="nav-link rounded-5" href="#">Iniciar Sesión</a>
                         </li>
-                        <li id="registerButton" class="nav-item">
+                        <li class="nav-item">
                             <a id="btn-register" class="nav-link rounded-5" href="#">Registrarse</a>
                         </li>
                     </ul>
@@ -50,34 +50,36 @@
         </nav>
     </header>
 
-    <!-- Main Contact -->
-    <main>
-        <section class="container-fluid">
-            <section class="row">
-                <div class="col-lg-6 col-sm-0 text-center mb-3 mt-3 pt-5 pb-5">
-                    <img id="imgContact" src="../img/About-Us/DanielIñiguez.jpeg" alt="" class="img-fluid img1 rounded-5">
-                </div>
-                <div class="col-lg-6 col-sm-12 text-center pe-5 pt-5">
-                    <h1 class="contact-title mb-5 mt-3">Contacto</h1>
-                
-                    <div class="mb-3 form-floating">
-                        <label for="nameUser" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nameUser" placeholder="Juan">
+    <main class="">
+        <section class="container-fluid row">
+            <!-- Imagen Perritos -->
+            <div class="col text-center mx-auto d-none d-md-block">
+                <img id="imgContact" src="../img/contact/imgContact.png" alt="Un perro y un gato cuyo lema es adoptame, amor, amistad">
+            </div>
+            <!-- Formulario -->
+            <div class="col form">
+                <h2 class="d-flex justify-content-center">Contacto</h2>
+                <div class="centerForm">
+                    <div class="mb-3 form-div">
+                        <p>Nombre</p>
+                        <input type="text" class="form-control" id="nameUser">
+                        <!-- <label for="nameUser" class="form-label">Nombre</label> -->
                     </div>
-                    <div class="mb-3 form-floating">
-                        <label for="emailUser" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="emailUser" placeholder="name@example.com">
+                    <div class="mb-3 form-floating form-div">
+                        <p>Email</p>
+                        <input type="email" class="form-control" id="emailUser">
+                        <!-- <label for="emailUser" class="form-label">E-mail</label> -->
                     </div>
-                    <div class="mb-3 form-floating">
-                        <label for="message" class="form-label">Mensaje</label>
+                    <div class="mb-3 form-floating form-div">
+                        <p>Mensaje</p>
                         <textarea class="form-control" id="message" rows="3"></textarea>
+                        <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
-                
-                    <button id="buttonContact" type="button" class="btn">Contáctanos</button>
-
                 </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <button id="buttonContact" type="button" class="btn rounded-5">Contáctanos</button>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
 
@@ -123,6 +125,6 @@
     <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
     <!-- Script Nosotros -->
     <script src="../js/contacto.js"></script>
+    
 </body>
-
 </html>
