@@ -77,18 +77,20 @@
 
             <!-- Formulario -->
             <div class="col form col-style m-auto">
-                <div class="centerForm ">
+                <form id="contactForm" class="centerForm ">
                     <h2 class="mb-5 text-center text-contact">Contacto</h2>
                     <div class="mb-3 form-div ">
                         <p class="text-form">Nombre</p>
                         <input type="text" class="form-control" id="nameUser" placeholder="Nombre ApellidoPaterno ApellidoMaterno">
                         <!-- <label for="nameUser" class="form-label">Nombre</label> -->
                     </div>
+                    <span id="errorName" class="d-flex justify-content-center text-danger"></span>
                     <div class="mb-3  form-div">
                         <p class="text-form">Email</p>
                         <input type="email" class="form-control" id="emailUser" placeholder="name@example.com">
                         <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
                     </div>
+                    <span id="errorEmail" class="d-flex justify-content-center text-danger"></span>
                     <div class="mb-3 form-floating form-diiv">
                         <p class="text-form">Mensaje</p>
                         <div class="col-sm-12">
@@ -98,10 +100,9 @@
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
                     <div class="mx-auto mt-5 text-center">
-                        <button id="buttonContact" type="submit" class="btn rounded-5">Contáctanos</button>
+                        <button id="buttonContact" type="submit" class="btn rounded-5" onclick="clickButton()">Contáctanos</button>
                     </div>
-                </div>
-
+                </form>
             </div>
         </section>
     </main>
@@ -147,7 +148,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
     <!-- Script Nosotros -->
-    <script src="../js/contacto.js"></script>
+    <script src="../js/contact.js"></script>
 
 </body>
 

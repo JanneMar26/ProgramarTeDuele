@@ -219,6 +219,10 @@ p {
     object-fit: cover;
 }
 
+#errorName, #errorEmail{
+    font-size: 15px;
+}
+
 
 /* ---------------- Footer --------------------- */
 .custom-padding-row {
