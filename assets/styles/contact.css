@@ -189,7 +189,7 @@ p {
     width: 70%;
 }
 
-#nameUser, #emailUser, #message {
+#nameUser, #emailUser, #message, #telUser {
     background-color: var(--main-bg-clr);
     border: none;
 }
