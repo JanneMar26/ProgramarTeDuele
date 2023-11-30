@@ -136,7 +136,7 @@ background-color: #f3f1f1;
 
 /* Main */
 main {
-    background-color: var(--secondary-bg-clr) !important;
+    background-color: var(--main-bg-clr) !important;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -169,7 +169,7 @@ p {
 }
 
 #nameUser, #emailUser, #message {
-    background-color: var(--secondary-bg-clr);
+    background-color: var(--main-bg-clr);
     border: none;
 }
 
