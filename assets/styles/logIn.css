@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* Adding Fonts  */
+
+@font-face {
+    font-family: 'Nunito Bold';
+    src: url("../fonts/Nunito/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito Black';
+    src: url("../fonts/Nunito/Nunito-Black.ttf");
+}
+
+@font-face {
+    font-family: "Nunito ExtraBold";
+    src: url("../fonts/Nunito/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Coiny";
+    src: url("../fonts/Coiny/Coiny-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../fonts/OpenSans/OpenSauceSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Medium";
+    src: url("../fonts/OpenSans/OpenSauceSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../fonts/OpenSans/OpenSauceSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Semi";
+    src: url("../fonts/OpenSans/OpenSauceSans-SemiBold.ttf");
+}
+
+/* Esto permite que la propiedad sea aplicada a todos los elementos y sub elementos (::after) del documento HTML, border-box permite agregar el padding y el margen dentro de la medida establecida de cada elemento, es decir, la medida queda igual.  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-clr: #F8EDED;
+    --secondary-bg-clr: #F2D0D2;
+    --main-text-clr: #393838;
+    --secondary-text-clr: #656464;
+    --main-section-bg-clr: #F3F3F3;
+}
+
+::selection {
+    background-color: var(--secondary-bg-clr);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*------------- Main --------------------*/
+main {
+    background-color: var(--main-bg-clr) !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
