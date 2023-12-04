@@ -76,30 +76,30 @@
             
             <!-- Formulario -->
             <div class="col form col-style m-auto">
-                <form id="formUser" class="centerForm ">
+                <form id="formUser" class="centerForm " action="https://formsubmit.co/lopezrogelio020799@gmail.com" method="POST">
                     <h2 class="mb-5 text-center text-contact">Contacto</h2>
                     <div class="mb-3 form-div nameUserClass">
                         <p class="text-form nameUserClass">Nombre</p>
-                        <input type="text" class="form-control" id="nameUser" placeholder="Nombre ApellidoPaterno ApellidoMaterno">
+                        <input type="text" class="form-control" id="nameUser" placeholder="Nombre Apellido(s)" name="nombre">
                         <!-- <label for="nameUser" class="form-label">Nombre</label> -->
                     </div>
                     <span id="errorName" class="d-flex justify-content-center text-danger nameUserClass"></span>
                     <div class="mb-3  form-div emailUserClass">
                         <p class="text-form emailUserClass">Email</p>
-                        <input type="email" class="form-control" id="emailUser" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="emailUser" placeholder="name@example.com" name="email">
                         <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
                     </div>
                     <span id="errorEmail" class="d-flex justify-content-center text-danger emailUserClass"></span>
                     <div class="mb-3  form-div telUserClass">
                         <p class="text-form telUserClass">Telefono</p>
-                        <input type="tel" class="form-control " id="telUser" placeholder="1234567891" maxlength="10">
+                        <input type="tel" class="form-control " id="telUser" placeholder="Numero de 10 digitos" maxlength="10" name="telefono">
                         <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
                     </div>
                     <span id="errorEmail" class="d-flex justify-content-center text-danger telUserClass"></span>
                     <div class="mb-3 form-floating form-diiv">
                         <p class="text-form">Mensaje</p>
                         <div class="col-sm-12">
-                            <textarea class="form-control border border-1 border-dark form-message" id="message" rows="7" placeholder="Escribe aqui tu queja o sugerencia."></textarea>
+                            <textarea class="form-control border border-1 border-dark form-message" id="message" rows="7" placeholder="Escribe aqui tu queja o sugerencia." name="mensaje"></textarea>
                         </div>         
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>

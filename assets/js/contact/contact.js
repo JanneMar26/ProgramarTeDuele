@@ -1,5 +1,4 @@
-import {createErrorWindow} from "./errorsForm.js";
-import { sendEmail } from "./sendEmail.js";
+import {createErrorWindow} from "./errorsForm.js";import { sendEmail } from "./sendEmail.js";
 
 // Referencia del Boton
 const buttonContactSend = document.getElementById("buttonContact");
@@ -89,7 +88,7 @@ buttonContactSend.addEventListener("click", e => {
     //console.log(checksDataUser.nameUser[1].ans);
     if (checksDataUser.nameUser[1].ans && checksDataUser.emailUser[1].ans && 
         checksDataUser.telUser[1].ans && checksDataUser.message[1].ans) {
-            sendEmail(checksDataUser);
+            formUser.submit();
     } else {
             createErrorWindow(checksDataUser);
     }
