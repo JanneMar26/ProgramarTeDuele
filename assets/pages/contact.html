@@ -59,28 +59,28 @@
             <!-- Formulario -->
             <div class="col form">
                 <h2 class="d-flex justify-content-center">Contacto</h2>
-                <form id="formUser">
+                <form id="formUser" action="https://formsubmit.co/lopezrogelio020799@gmail.com" method="POST">
                     <div class="mb-1 form-div nameUserClass">
                         <p class="nameUserClass">Nombre</p>
-                        <input type="text" class="form-control" id="nameUser">
+                        <input type="text" class="form-control" id="nameUser" name="nombre">
                         <!-- <label for="nameUser" class="form-label">Nombre</label> -->
                     </div>
                     <p class="nameUserClass" style="color:red"></p>
                     <div class="mb-1 form-floating form-div emailUserClass">
                         <p class="emailUserClass">Email</p>
-                        <input type="email" class="form-control" id="emailUser">
+                        <input type="email" class="form-control" id="emailUser" name="email">
                         <!-- <label for="emailUser" class="form-label">E-mail</label> -->
                     </div>
                     <p class="emailUserClass" style="color:red"></p>
                     <div class="mb-1 form-floating form-div telUserClass">
                         <p class="telUserClass">Teléfono</p>
-                        <input type="tel" class="form-control" id="telUser" maxlength="10">
+                        <input type="tel" class="form-control" id="telUser" maxlength="10" name="telefono">
                         <!-- <label for="emailUser" class="form-label">E-mail</label> -->
                     </div>
                     <p class="telUserClass" style="color:red"></p>
                     <div class="mb-1 form-floating form-div messageClass">
                         <p class="messageClass">Mensaje</p>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <textarea class="form-control" id="message" rows="3" name="mensaje"></textarea>
                         <!-- <label for="message" class="form-label">Mensaje</label> -->
                     </div>
                     <p class="messageClass" style="color:red"></p>
