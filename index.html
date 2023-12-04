@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AdoptaPatas</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logos/logo_v1.png">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link NavBar css-->
+    <link rel="stylesheet" href="./assets/styles/navbar.css">
+    <!-- Link Footer css-->
+    <link rel="stylesheet" href="./assets/styles/footer.css">
 </head>
-
 <body>
+    <!-- Navbar -->
+    <header id="nav-bar">
+        <nav class="navbar-custom navbar navbar-custom navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <!-- Left Side Navbar -->
+                <a class="navbar-brand" href="index.html"><img id="logoNav" src="./assets/img/logos/SVG/Logo.svg" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- Right Side Navbar -->
+                <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/adopt.html">Adoptar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/newsFeed.html">News Feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/involucrate.html">Involúcrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btn-login" class="nav-link rounded-5" href="./assets/pages/logIn.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btn-register" class="nav-link rounded-5" href="./assets/pages/signUp.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <script src="./assets/js/index.js"></script>
+    <main>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+        <h1>Home</h1>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row custom-padding-row">
+                <div class="col-md-6 col-lg-6 text-md-left d-flex flex-column left-container">
+                    <a class="a-link" href="./assets/pages/home.html"><img id="footer-logo" src="./assets/img/logos/SVG/Logo-Footer.svg" alt="" /></a>
+                    <a class="a-link" href="./assets/pages/contact.html"><h4>Contacto: </h4>contacto.adoptapatas@gmail.com</a>
+                    <a class="a-link" href="./assets/pages/about-us.html">Acerca De Nosotros</a>
+                    <p class="custom-align mb-4">
+                        @ Copyright 2023 AdoptaPatas. Todos los derechos reservados
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-6 text-md-end d-flex flex-column right-container">
+                    <a class="a-link" href="./assets/pages/askedQuestions.html">Preguntas Frecuentes</a>
+                    <a class="a-link" href="./assets/pages/involucrate.html">Centro de Información</a>
+                    <a class="a-link" href="./assets/pages/donations.html">Apoya este proyecto</a>
+                    <a class="a-link" href="./assets/pages/adopt.html">Encuentra una mascota</a>
+                    <ul class="list-unstyled list-inline float-end">
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    <!-- Script Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/08c177705b.js" crossorigin="anonymous"></script>
+    <!-- Script Nosotros -->
+    <script type="module" src="../js/contact/contact.js"></script>
 </body>
-
 </html>
