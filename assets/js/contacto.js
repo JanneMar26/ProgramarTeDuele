@@ -88,7 +88,7 @@ buttonContactSend.addEventListener("click", e => {
     //console.log(checksDataUser.nameUser[1].ans);
     if (checksDataUser.nameUser[1].ans && checksDataUser.emailUser[1].ans && 
         checksDataUser.telUser[1].ans && checksDataUser.message[1].ans) {
-            formUser.submit();
+            formUser.submit().preventDefault();
     } else {
             createErrorWindow(checksDataUser);
     }
