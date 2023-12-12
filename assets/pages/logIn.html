@@ -53,16 +53,83 @@
     </header>
 
     
-    <main>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
-        <h1>Inicio de sesion</h1>
+    <main class="container-fluid">
+        <section class="row">
+            <!-- Formulario -->
+            <div class="col form col-style m-auto">
+                <form id="formUser" class="centerForm " action="https://formsubmit.co/lopezrogelio020799@gmail.com"
+                    method="POST">
+                    <h2 class="mb-5 mt-5 text-center text-contact">Iniciar Sesion</h2>
+                    <div class="mb-3 form-div nameUserClass">
+                        <p class="text-form nameUserClass">E-mail o Nombre de Usuario*</p>
+                        <input type="text" class="form-control" id="nameUser" placeholder="E-mail o Usuario" name="nombre">
+                        <!-- <label for="nameUser" class="form-label">Nombre</label> -->
+                    </div>
+                    <div class="mb-3  form-div emailUserClass">
+                        <p class="text-form emailUserClass">Contraseña*</p>
+                        <input type="password" class="form-control" id="emailUser" placeholder="********"
+                            name="email">
+                        <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                    </div>                  
+                    <div class="mx-auto mt-5 text-center">
+                        <button id="buttonContact" type="button" class="btn rounded-5">Iniciar Sesion</button>
+                    </div>
+                    <p class="text-center tienesCuenta">¿Olvidaste tu contraseña?</p>
+                    <a class="loginlink text-center d-flex justify-content-center mb-4" href="./signUp.html">Crear Cuenta</a>
+                    <div class="row mb-0">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="d-flex justify-content-center align-items-center" href="#">
+                                <img class="fbImage" src="../img/logos/facebook.png" alt="Logo Facebook">
+
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="d-flex justify-content-center align-items-center" href="#">
+                                <img class="goImage" src="../img/logos/google.png" alt="Logo Google">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="fbImage" href="#">
+
+                                Facebook
+
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="goImage" href="#">
+                                Google
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Carrusel Perritos-->
+            <div class="col text-center d-none d-md-block  m-auto">
+                <div id="carouselExampleSlidesOnly" class="carousel slide m-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/contact/Carousel/imgContact.jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/contact/Carousel/imgContact(2).jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/contact/Carousel/imgContact(3).jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/contact/Carousel/imgContact(4).jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img id="imgContact" src="../img/contact/imgContact.png"
+                        alt="Un perro y un gato cuyo lema es adoptame, amor, amistad" class="text-center"> -->
+            </div>
+
+        </section>
     </main>
 
 

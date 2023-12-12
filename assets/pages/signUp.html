@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="../img/logos/logo_v1.png">
     <!-- Link Css -->
-    <link rel="stylesheet" href="../styles/signIn.css">
+    <link rel="stylesheet" href="../styles/signUp.css">
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,6 +17,7 @@
     <!-- Link Footer css-->
     <link rel="stylesheet" href="../styles/footer.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <header id="nav-bar">
@@ -51,57 +53,218 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
-        <h1>Registro</h1>
+
+
+    <main class="container-fluid">
+        <section class="row">
+            <!-- Carrusel Perritos-->
+            <div class="col text-center d-none d-md-block  m-auto">
+                <div id="carouselExampleSlidesOnly" class="carousel slide m-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/contact/Carousel/imgContact.jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/contact/Carousel/imgContact(2).jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/contact/Carousel/imgContact(3).jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/contact/Carousel/imgContact(4).jpeg" class="imgC d-block w-80" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img id="imgContact" src="../img/contact/imgContact.png"
+                        alt="Un perro y un gato cuyo lema es adoptame, amor, amistad" class="text-center"> -->
+            </div>
+
+            <!-- Formulario -->
+            <div class="col form col-style m-auto">
+                <form id="formUser" class="centerForm " action="https://formsubmit.co/lopezrogelio020799@gmail.com"
+                    method="POST">
+                    <h2 class="mb-5 mt-5 text-center text-contact">¡Únete y Adopta!</h2>
+                    <div class="mb-3 form-div nameUserClass">
+                        <p class="text-form nameUserClass">Nombre(s)*</p>
+                        <input type="text" class="form-control" id="nameUser" placeholder="Nombre" name="nombre">
+                        <!-- <label for="nameUser" class="form-label">Nombre</label> -->
+                    </div>
+                    <span id="errorName" class="d-flex justify-content-center text-danger nameUserClass"></span>
+                    <div class="mb-3 form-div nameUserClass">
+                        <p class="text-form nameUserClass">Apellidos*</p>
+                        <input type="text" class="form-control" id="nameUser" placeholder="Apellidos" name="nombre">
+                        <!-- <label for="nameUser" class="form-label">Nombre</label> -->
+                    </div>
+                    <span id="errorName" class="d-flex justify-content-center text-danger nameUserClass"></span>
+                    <div class="mb-3 form-div nameUserClass">
+                        <p class="text-form nameUserClass">Nombre de Usuario*</p>
+                        <input type="text" class="form-control" id="nameUser" placeholder="Nombre de usuario"
+                            name="nombre">
+                        <!-- <label for="nameUser" class="form-label">Nombre</label> -->
+                    </div>
+                    <span id="errorName" class="d-flex justify-content-center text-danger nameUserClass"></span>
+                    <div class="mb-3  form-div emailUserClass">
+                        <p class="text-form emailUserClass">Email*</p>
+                        <input type="email" class="form-control" id="emailUser" placeholder="name@example.com"
+                            name="email">
+                        <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                    </div>
+                    <span id="errorEmail" class="d-flex justify-content-center text-danger emailUserClass"></span>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3 form-div passwordUserClass">
+                                <p class="text-form passwordUserClass">Contraseña*</p>
+                                <input type="password" class="form-control" id="emailUser" placeholder="********"
+                                    name="email">
+                                <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3 form-div confirmPasswordUserClass w-20">
+                                <p class="text-form confirmPasswordUserClass">Confirmar Contraseña*</p>
+                                <input type="password" class="form-control" id="emailUser" placeholder="********"
+                                    name="email">
+                                <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-div telUserClass">
+                        <p class="text-form telUserClass">Edad*</p>
+                        <input type="number" class="form-control " id="telUser" placeholder="Edad" maxlength="10"
+                            name="telefono">
+                        <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                    </div>
+                    <div class="mb-3  form-div telUserClass">
+                        <p class="text-form telUserClass">Telefono</p>
+                        <input type="tel" class="form-control " id="telUser" placeholder="Numero de 10 digitos"
+                            maxlength="10" name="telefono">
+                        <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                    </div>
+                    <span id="errorEmail" class="d-flex justify-content-center text-danger telUserClass"></span>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <select name="stores" id="stores" class="text-center">
+                                <option selected>Selecciona Estado</option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Campeche">Campeche</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Colima">Colima</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Michoacán">Michoacán</option>
+                                <option value="Morelos">Morelos</option>
+                                <option value="Nayarit">Nayarit</option>
+                                <option value="Nuevo León">Nuevo León</option>
+                                <option value="Oaxaca">Oaxaca</option>
+                                <option value="Puebla">Puebla</option>
+                                <option value="Querétaro">Querétaro</option>
+                                <option value="Quintana Roo">Quintana Roo</option>
+                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                <option value="Sinaloa">Sinaloa</option>
+                                <option value="Sonora">Sonora</option>
+                                <option value="Tabasco">Tabasco</option>
+                                <option value="Tamaulipas">Tamaulipas</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                                <option value="Veracruz">Veracruz</option>
+                                <option value="Yucatán">Yucatán</option>
+                                <option value="Zacatecas">Zacatecas</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3 form-div confirmPasswordUserClass w-20">
+                                <p class="text-form confirmPasswordUserClass">Codigo Postal*</p>
+                                <input type="password" class="form-control" id="emailUser" placeholder="Codigo"
+                                    name="email">
+                                <!-- <label for="emailUser" class="form-label">e-mail</label>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-5 text-center">
+                        <button id="buttonContact" type="button" class="btn rounded-5">Registrate</button>
+                    </div>
+                    <p class="text-center tienesCuenta">¿Ya tienes cuenta?</p>
+                    <a class="loginlink text-center d-flex justify-content-center mb-4" href="./logIn.html">Inicia
+                        Sesion</a>
+                    <div class="row mb-0">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="d-flex justify-content-center align-items-center" href="#">
+                                <img class="fbImage" src="../img/logos/facebook.png" alt="Logo Facebook">
+
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="d-flex justify-content-center align-items-center" href="#">
+                                <img class="goImage" src="../img/logos/google.png" alt="Logo Google">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="fbImage" href="#">
+
+                                Facebook
+
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <a class="goImage" href="#">
+                                Google
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
 
-   <!-- Footer -->
-   <footer class="bg-dark text-white">
-    <div class="container">
-        <div class="row custom-padding-row">
-            <div class="col-md-6 col-lg-6 text-md-left d-flex flex-column left-container">
-                <a class="a-link" href="/index.html"><img id="footer-logo" src="../img/logos/SVG/Logo-Footer.svg" alt="" /></a>
-                <a class="a-link" href="../pages/contact.html"><h4>Contacto: </h4>contacto.adoptapatas@gmail.com</a>
-                <a class="a-link" href="../pages/about-us.html">Acerca De Nosotros</a>
-                <p class="custom-align mb-4">
-                    @ Copyright 2023 AdoptaPatas. Todos los derechos reservados
-                </p>
-            </div>
-            <div class="col-md-6 col-lg-6 text-md-end d-flex flex-column right-container">
-                <a class="a-link" href="../pages/askedQuestions.html">Preguntas Frecuentes</a>
-                <a class="a-link" href="../pages/involucrate.html">Centro de Información</a>
-                <a class="a-link" href="../pages/donations.html">Apoya este proyecto</a>
-                <a class="a-link" href="../pages/adopt.html">Encuentra una mascota</a>
-                <ul class="list-unstyled list-inline float-end">
-                    <li class="list-inline-item">
-                        <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
-                                class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
-                                class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
-                                class="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row custom-padding-row">
+                <div class="col-md-6 col-lg-6 text-md-left d-flex flex-column left-container">
+                    <a class="a-link" href="/index.html"><img id="footer-logo" src="../img/logos/SVG/Logo-Footer.svg"
+                            alt="" /></a>
+                    <a class="a-link" href="../pages/contact.html">
+                        <h4>Contacto: </h4>contacto.adoptapatas@gmail.com
+                    </a>
+                    <a class="a-link" href="../pages/about-us.html">Acerca De Nosotros</a>
+                    <p class="custom-align mb-4">
+                        @ Copyright 2023 AdoptaPatas. Todos los derechos reservados
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-6 text-md-end d-flex flex-column right-container">
+                    <a class="a-link" href="../pages/askedQuestions.html">Preguntas Frecuentes</a>
+                    <a class="a-link" href="../pages/involucrate.html">Centro de Información</a>
+                    <a class="a-link" href="../pages/donations.html">Apoya este proyecto</a>
+                    <a class="a-link" href="../pages/adopt.html">Encuentra una mascota</a>
+                    <ul class="list-unstyled list-inline float-end">
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 23px"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-    
-
-
+    </footer>
 
     <!-- Script Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -111,4 +274,5 @@
     <!-- Script Nosotros -->
     <script type="module" src="../js/contact/contact.js"></script>
 </body>
-Inicio de sesion
+
+</html>
